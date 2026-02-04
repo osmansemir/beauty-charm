@@ -2,16 +2,22 @@ function Header() {
   return (
     <>
       <header className="flex flex-col items-center">
-        <div className="min-h-30 m-5 flex flex-col justify-center items-center">
-          <div className="text-7xl">BC</div>
-          <div>Beauty Charm</div>
-          <div>Makeup Artist</div>
+        <div className="size-50 ">
+          <img src="bc-logo.svg" />
         </div>
-        <nav className="">
-          <ul className="flex gap-4">
-            <li>Home</li>
+        <nav className=" font-serif pb-3">
+          <ul className="flex gap-6">
+            <li>
+              <a href="#" className="cursor-pointer">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#About" className="cursor-pointer">
+                About
+              </a>
+            </li>
             <li>Services</li>
-            <li>About</li>
             <li>Contact</li>
           </ul>
         </nav>

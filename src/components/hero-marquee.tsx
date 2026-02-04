@@ -11,13 +11,20 @@ function HeroMarquee() {
   return (
     <>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-        <Marquee pauseOnHover className="[--duration:20s]">
+        {/* <Marquee pauseOnHover className="[--duration:60s] [--gap:0.5rem]"> */}
+        {/*   {urls.map((url) => ( */}
+        {/*     <div className="w-80 h-90 border-lime-50"> */}
+        {/*       <img className="object-cover" src={url} alt="" /> */}
+        {/*     </div> */}
+        {/*   ))} */}
+        {/* </Marquee> */}
+        <div className="flex gap-1">
           {urls.map((url) => (
-            <div className="w-80 h-90 border-lime-50">
+            <div className="w-65 h-80 shrink-0 border-lime-50">
               <img className="object-cover" src={url} alt="" />
             </div>
           ))}
-        </Marquee>
+        </div>
       </div>
     </>
   );
